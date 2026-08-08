@@ -1,0 +1,59 @@
+# Build directories
+build/
+build-*/
+out/
+cmake-build-*/
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+install_manifest.txt
+
+# Compiler / IDE artifacts
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exe
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+*.dmp
+*.log
+*.tmp
+*.store
+*.suo
+*.user
+*.VC.db
+.vs/
+.vscode/
+.idea/
+
+# Runtime state
+.store/
+*.store/
+compute_fabric_store/
+.compute_fabric_store*/
+test_store_*/
+bench_store_*/
+example_store_*/
+
+# Telemetry / logs
+*.ndjson
+*.jsonl
+/telemetry/
+*.log/
+*.stderr
+
+# Python etc.
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
