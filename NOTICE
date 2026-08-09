@@ -1,0 +1,15 @@
+Compute Fabric
+Copyright 2026 Compute Fabric contributors
+
+This product includes software developed by the Compute Fabric contributors.
+
+Compute Fabric is an independent project. It is not affiliated with, endorsed
+by, or a fork of Kubernetes, Slurm, Ray, AIGOS, or any other cluster scheduler
+or distributed execution system.
+
+Context Fabric and FlashTier are separate sibling projects. Compute Fabric
+defines placement around reusable computational state and physical data
+residency, but it does not contain either sibling project's source code and
+does not require either project to build or run.
+
+This product uses the Apache License 2.0. See LICENSE.

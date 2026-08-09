@@ -157,3 +157,14 @@ fabrics with synthetic in-memory placement and cost scenarios.
 - Placement and execution are the product boundary. Cluster provisioning,
   container scheduling, service discovery, and arbitrary application rollout
   are intentionally out of scope.
+
+## Project governance
+
+Contributions are welcome under the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+Participation is governed by [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and
+vulnerabilities should be reported privately as described in
+[SECURITY.md](SECURITY.md).
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
