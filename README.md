@@ -136,35 +136,6 @@ The benchmark suite is validation-oriented rather than a general performance
 study. It combines real local CPU/CUDA execution and real local child-process
 fabrics with synthetic in-memory placement and cost scenarios.
 
-## Current limitations
-
-- The demonstrated multi-process fabric is local-host only. Cross-machine
-  deployment has not been validated here.
-- The TCP control plane does not currently provide TLS, peer authentication,
-  or authorization; do not expose its ports to untrusted networks.
-- Durable state is a local coordinator store, not a replicated consensus or
-  high-availability service.
-- Nodes exit when an established coordinator transport is permanently lost;
-  an external supervisor must restart them.
-- Preferred nodes and tags influence placement scores. The task schema's
-  anti-affinity, same-node, and different-node fields are serialized metadata
-  but are not yet enforced by placement.
-- `LocalFabric` discovers free ports before spawning the coordinator, leaving
-  a small bind-after-probe race with unrelated local processes.
-- CUDA validation currently targets NVIDIA CUDA and Blackwell `sm_120`; other
-  vendors would require another executor backend, and other CUDA architectures
-  require an explicit build setting and validation.
-- Placement and execution are the product boundary. Cluster provisioning,
-  container scheduling, service discovery, and arbitrary application rollout
-  are intentionally out of scope.
-
-## Project governance
-
-Contributions are welcome under the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
-Participation is governed by [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and
-vulnerabilities should be reported privately as described in
-[SECURITY.md](SECURITY.md).
-
 ## License
 
-Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+Apache License 2.0. Copyright 2026 Summon Software Labs. No telemetry transmission.
